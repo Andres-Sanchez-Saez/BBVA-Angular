@@ -1,0 +1,26 @@
+{
+  "name": "calculadora-iban",
+  "version": "3.0.17",
+  "description": "Calculadora IBAN",
+  "main": [
+    "calculadora.iban.component.js",
+    "calculadora.iban.directive.js"
+  ],
+  "devDependencies": {
+    "common-resources": "http://lcm-repositorio-fuentes.igrupobbva/scm/eyph/c0001-common-resources.git"
+  },
+  "moduleType": [],
+  "authors": [
+    "SC&JR"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "CALCULAR_IBAN": "IBAN calculator",
+  "DC": "CD",
+  "ENTIDAD": "Entity",
+  "INTRODUZCA_CCC_IBAN": "Enter the account number in CCC format to calculate the IBAN.",
+  "NUMERO": "Number",
+  "OFICINA": "Branch office",
+  "RECUERDE_INFORMAR_IBAN": "Remember you must provide your account in IBAN format in your transactions",
+  "UTILIZAR_IBAN": "Use IBAN"
+}

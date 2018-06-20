@@ -1,0 +1,11 @@
+ <div class="margin-top-5">
+     <a href=""
+        uib-popover-template="$ctrl.popoverTemplate"
+        popover-is-open="$ctrl.isOpen"
+        popover-placement="{{$ctrl.calcPosition}}"
+        popover-trigger="outsideClick"
+        class="flex-display link_icon_decoration">
+            <i class="bbva-icon icon-icn_t-iconLib_N06-64px link_href" ng-show="$ctrl.showIcon"></i>
+         <span>{{'CALCULAR_IBAN' | translate}}</span>
+     </a>
+ </div>

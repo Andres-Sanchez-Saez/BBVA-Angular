@@ -1,0 +1,11 @@
+{	
+	"CALCULAR_IBAN": "Calculadora de IBAN",
+	"INTRODUZCA_CCC_IBAN": "Introduzca el número de cuenta en formato CCC para calcular el IBAN",
+	"RECUERDE_INFORMAR_IBAN": "Recuerde que debe informar su cuenta en formato IBAN en sus transacciones",
+	"UTILIZAR_IBAN": "Utilizar IBAN",
+	"ENTIDAD": "Entidad",
+	"OFICINA": "Oficina",
+	"DC": "DC",
+	"NUMERO": "Número"
+
+}

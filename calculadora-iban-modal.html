@@ -1,0 +1,60 @@
+<div id="calculadoraTemplate" class="calculadora" calculadora-iban-directive>
+  <div class="cerrarPopover">
+    <h3 class="pull-left">{{'CALCULAR_IBAN' | translate}}</h3>
+    <a href="" ng-click="$ctrl.close(calculadoraForm)">
+      <i class="bbva-icon close_icon icon-Cruz close_popover_general"></i>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <form class="form-horizontal" name="calculadoraForm" novalidate>
+        <p>{{'INTRODUZCA_CCC_IBAN' | translate}}</p>
+        <div class="form-group">
+          <div class="col-xs-12 col-sm-12">
+            <input type="text"
+                   ng-class="{'error':!$ctrl.validCCC}"
+                   class="form-control iban pull-left" id="c1" name="c1" value=""
+                   ng-model="$ctrl.calculadoraForm.c1"
+                   placeholder="{{'ENTIDAD' | translate}}"
+                   minlength="4"
+                   maxlength="4"
+                   ng-required="true"
+                   ng-paste="$ctrl.handlePaste($event, 1)"
+            >
+            <input type="text" ng-class="{'error':!$ctrl.validCCC}" class="form-control iban pull-left"
+                   id="c2" name="c2" value=""
+                   ng-model="$ctrl.calculadoraForm.c2"
+                   placeholder="{{'OFICINA' | translate}}"
+                   minlength="4"
+                   maxlength="4"
+                   ng-required="true"
+                   ng-paste="$ctrl.handlePaste($event, 2)">
+            <input type="text" ng-class="{'error':!$ctrl.validCCC}" class="form-control iban dc pull-left"
+                   id="c3" name="c3" value=""
+                   ng-model="$ctrl.calculadoraForm.c3"
+                   placeholder="{{'DC' | translate}}"
+                   minlength="2"
+                   maxlength="2"
+                   ng-required="true"
+                   ng-paste="$ctrl.handlePaste($event, 3)">
+            <input type="text" ng-class="{'error':!$ctrl.validCCC}"
+                   class="form-control iban cuenta pull-left" id="c4" name="c4" value=""
+                   ng-model="$ctrl.calculadoraForm.c4"
+                   placeholder="{{'NUMERO' | translate}}"
+                   minlength="10"
+                   maxlength="10"
+                   ng-required="true"
+                   ng-paste="$ctrl.handlePaste($event, 4)">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-12 col-sm-12">
+            <button type="button" class="azul pull-right" ng-click="$ctrl.ccc2iban(calculadoraForm)">
+              <span>{{'UTILIZAR_IBAN' | translate}}</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
